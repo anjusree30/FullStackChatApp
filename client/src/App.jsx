@@ -14,6 +14,11 @@ const apiKey = "2z5khscn6hcq";
 const authToken = cookies.get('token');
 const client = StreamChat.getInstance(apiKey);
 
+
+
+
+
+
 if (authToken) {
   client.connectUser({
     id: cookies.get('userId'),
