@@ -30,7 +30,7 @@ const Auth = () => {
         e.preventDefault();
 
         const { username, password, phoneNumber, avatarURL } = form;
-        const URL = 'http://localhost:5000/auth';
+        const URL = 'https://full-stack-chat-server.vercel.app/auth';
 
         try {
             const { data } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
